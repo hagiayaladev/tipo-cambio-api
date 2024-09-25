@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "d4e20c52-7fd5-4980-ac91-35953c9449aa",
+		"name": "tipoCambioAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18759838"
+	},
+	"item": [
+		{
+			"name": "Aplicar cambio GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/api/v1/tipo-cambio/aplicar?monto=100.0&monedaOrigen=USD&monedaDestino=PEN",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"v1",
+						"tipo-cambio",
+						"aplicar"
+					],
+					"query": [
+						{
+							"key": "monto",
+							"value": "100.0"
+						},
+						{
+							"key": "monedaOrigen",
+							"value": "USD"
+						},
+						{
+							"key": "monedaDestino",
+							"value": "PEN"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Aplicar cambio POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8086/api/v1/tipo-cambio/actualizar?monedaOrigen=USD&monedaDestino=PEN&nuevoTipoCambio=3.85",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"v1",
+						"tipo-cambio",
+						"actualizar"
+					],
+					"query": [
+						{
+							"key": "monedaOrigen",
+							"value": "USD"
+						},
+						{
+							"key": "monedaDestino",
+							"value": "PEN"
+						},
+						{
+							"key": "nuevoTipoCambio",
+							"value": "3.85"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
